@@ -1,0 +1,53 @@
+/* src/index.css */
+
+/* ☀️ Default Canvas & Light Theme Profiles */
+:root {
+  --bg-main: #f8fafc;        /* Soft slate canvas backdrop */
+  --bg-card: #ffffff;        /* Crisp elevated white panel sheets */
+  --text-main: #0f172a;      /* Rich charcoal headline typography */
+  --text-muted: #64748b;     /* Slate subtitle accent text */
+  --border-element: #f1f5f9; /* Ultra-thin soft split boundary lines */
+  --btn-selector: #f1f5f9;   /* Smooth gray button container fill */
+  --text-selector: #334155;  /* Deep text choice values */
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+/* 🌙 Obsidian Dark Theme Overrides */
+[data-theme="dark"] {
+  --bg-main: #0b0f19;       /* Deep obsidian canvas framing backdrop */
+  --bg-card: #151b2c;       /* Polished midnight elevated panels */
+  --text-main: #f8fafc;     /* Bright readable text typography sheets */
+  --text-muted: #94a3b8;    /* Softer gray descriptive context scales */
+  --border-element: #1e293b;/* Subdued dark partition frames */
+  --btn-selector: #1e293b;  /* Deep button containers structural fill */
+  --text-selector: #e2e8f0; /* Crisp white user selection options */
+  --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
+}
+
+/* 🌐 Clean Global System Base Overrides */
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+css/* Fix basic form spacing and theme integration for the sandbox page */
+body {
+  background-color: #020617 !important; /* Deep slate background matching ws-at */
+  color: #f8fafc !important;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
+
+select {
+  background-color: #1e293b !important;
+  color: #ffffff !important;
+  border: 1px solid #334155 !important;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
